@@ -1,3 +1,13 @@
+--[[
+
+	CastAbilityServer
+	@author Garantae
+
+	After a player issues a request to use an ability, server handles which ability has been used and what each ability does. The different abilities are given upon player
+	contact with the ability crystal.
+
+--]]
+
 --// Variables
 local AbilityName
 local AbilityTexture
