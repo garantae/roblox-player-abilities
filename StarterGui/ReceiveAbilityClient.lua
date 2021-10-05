@@ -1,6 +1,6 @@
 --[[
 	
-	ReceiveAbility
+	ReceiveAbilityClient
 	@author Garantae
 
 	When the player receives an ability from the crystal, send the corresponding info and update the player's
