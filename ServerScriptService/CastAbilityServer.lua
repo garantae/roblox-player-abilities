@@ -9,8 +9,8 @@ local Timer = 0
 local function Vanish()
 	if workspace:FindFirstChild(AbilityRecipient) then
 		script.VanishBehavior:Clone().Parent = workspace:FindFirstChild(AbilityRecipient)
-		if workspace:FindFirstChild(AbilityRecipient):FindFirstChild("VanishBehavior") then
-			workspace:FindFirstChild(AbilityRecipient):FindFirstChild("VanishBehavior").Disabled = false
+		if workspace:FindFirstChild(AbilityRecipient):FindFirstChild("VanishAbility") then
+			workspace:FindFirstChild(AbilityRecipient):FindFirstChild("VanishAbility").Disabled = false
 		end
 	end
 	IsScriptActive = false	
@@ -19,8 +19,8 @@ end
 local function Sprint()
 	if workspace:FindFirstChild(AbilityRecipient) then
 		script.SprintBehavior:Clone().Parent = workspace:FindFirstChild(AbilityRecipient)
-		if workspace:FindFirstChild(AbilityRecipient):FindFirstChild("SprintBehavior") then
-			workspace:FindFirstChild(AbilityRecipient):FindFirstChild("SprintBehavior").Disabled = false
+		if workspace:FindFirstChild(AbilityRecipient):FindFirstChild("SprintAbility") then
+			workspace:FindFirstChild(AbilityRecipient):FindFirstChild("SprintAbility").Disabled = false
 		end
 	end
 	IsScriptActive = false
@@ -29,8 +29,8 @@ end
 local function Freeze()
 	if workspace:FindFirstChild(AbilityRecipient) then
 		script.FreezeBehavior:Clone().Parent = workspace:FindFirstChild(AbilityRecipient)
-		if workspace:FindFirstChild(AbilityRecipient):FindFirstChild("FreezeBehavior") then
-			workspace:FindFirstChild(AbilityRecipient):FindFirstChild("FreezeBehavior").Disabled = false
+		if workspace:FindFirstChild(AbilityRecipient):FindFirstChild("FreezeAbility") then
+			workspace:FindFirstChild(AbilityRecipient):FindFirstChild("FreezeAbility").Disabled = false
 		end
 	end
 	IsScriptActive = false
