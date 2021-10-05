@@ -3,7 +3,8 @@
 	ReceiveAbility
 	@author Garantae
 
-	Upon player contact with the ability crystal, determine what ability has been given and send the corresponding image, name, and data to the player's user interface.
+	When the player receives an ability from the crystal, send the corresponding info and update the player's
+	user interface (buttons, ability name, etc).
 
 --]]
 
