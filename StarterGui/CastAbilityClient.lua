@@ -1,3 +1,12 @@
+--[[
+
+	CastAbilityClient
+	@author Garantae
+
+	Issue a request to the server to use an ability.
+
+--]]
+
 --// Variables
 local AbilityReceived = game.ReplicatedStorage.CORE_RemoteEvents.AbilityReceived
 local AbilityButton = script.Parent
