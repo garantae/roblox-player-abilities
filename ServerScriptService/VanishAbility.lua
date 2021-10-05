@@ -25,7 +25,7 @@ local function Vanish()
 			item.Transparency = 1
 		elseif item:IsA("Accessory") then
 			for _, accessoryPart in pairs (item:GetChildren()) do
-				if accessoryPart:IsA("Part") then
+				if accessoryPart:IsA("Part") or accessoryPart:IsA("MeshPart") then
 					accessoryPart.Transparency = 1
 				end
 			end
@@ -83,7 +83,7 @@ local function Vanish()
 			end
 		elseif item:IsA("Accessory") then
 			for _, accessoryPart in pairs (item:GetChildren()) do
-				if accessoryPart:IsA("Part") then
+				if accessoryPart:IsA("Part") or accessoryPart:IsA("MeshPart") then
 					accessoryPart.Transparency = 0
 				end
 			end
