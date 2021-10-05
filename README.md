@@ -5,7 +5,8 @@
 * Send information regarding the ability to the client (name, image, etc.)
 * Server executes the ability's function upon player request.
 
-SpawnCrystal.lua will check if a game is currently in progress. If it is, then over a random period of time, it will spawn an ability crystal at a random spawn placed around a map. When a player picks this crystal up, they will receive a random ability each designated with their own unique value. This will then send the client information regarding the ability they received, such as the ability name, picture, and the ability to use it (button). When the player decides to use said ability, it will issue a RemoteEvent request to the server where it then carries out the function of the ability.
+  If a game is in progress, an ability crystal will spawn at random spawn indicators placed around the map over a random period of time (SpawnCrystal.lua). When a player makes contact with the crystal, they will receive a random ability, generated through a random selection of values that is attached to corresponding abilities (ReceiveAbility.lua). After, the client will then be sent all of the received ability's data, such as its name and image (ReceiveAbilityClient.lua). When the player feels ready to use said ability, they are able to interact with the ability button that will issue a RemoveEvent request to the server (CastAbilityClient.lua) which will be where the server carries out the ability's function (CastAbilityServer.lua)
+
 # Vanish Ability Showcase
 
 https://user-images.githubusercontent.com/91921033/135949989-eb21d0be-2794-4ad5-b1a8-a23de9b899f8.mp4
