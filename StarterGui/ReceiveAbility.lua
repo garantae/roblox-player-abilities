@@ -31,7 +31,7 @@ game.ReplicatedStorage.CORE_RemoteEvents.AbilityReceived.OnClientEvent:Connect(f
 		--]]
 	
 		--// Undisable CastAbility
-		script.Parent.CastAbility.Disabled = false
+		script.Parent.CastAbilityClient.Disabled = false
 	
 	end
 	
