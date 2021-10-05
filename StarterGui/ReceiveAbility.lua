@@ -1,3 +1,12 @@
+--[[
+	
+	ReceiveAbility
+	@author Garantae
+
+	Upon player contact with the ability crystal, determine what ability has been given and send the corresponding image, name, and data to the player's user interface.
+
+--]]
+
 --// Variables
 local AbilityReceived = game.ReplicatedStorage.CORE_RemoteEvents.AbilityReceived
 local AbilityButton = script.Parent
@@ -5,7 +14,6 @@ local IsAbilityPresentValue = AbilityButton.Parent.IsAbilityPresentValue
 local AbilityNameValue = AbilityButton.Parent.AbilityNameValue
 local AbilityTextureValue = AbilityButton.Parent.AbilityTextureValue
 local StatusHeader = game.ReplicatedStorage.CORE_GameValues.StatusHeader
-
 
 
 game.ReplicatedStorage.CORE_RemoteEvents.AbilityReceived.OnClientEvent:Connect(function(AbilityName,AbilityTexture,IsAbilityPresent)
