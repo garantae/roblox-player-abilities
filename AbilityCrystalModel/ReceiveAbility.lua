@@ -1,3 +1,12 @@
+--[[
+
+	ReceiveAbility
+	@author Garantae
+
+	If the player touches the ability crystal, give a random ability.
+
+--]]
+
 --// Variables
 local player
 local AbilityName
