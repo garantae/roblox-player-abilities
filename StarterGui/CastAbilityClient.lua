@@ -17,7 +17,7 @@ local ClickSound = script.ClickSound
 
 function onClick()
 	
-	--// Unshow the button
+	--// Hide button UI
 	AbilityButton.Visible = false
 	
 	ClickSound:Play()
